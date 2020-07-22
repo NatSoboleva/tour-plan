@@ -102,37 +102,32 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-1.jpg" alt="Slider">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-2.jpg" alt="Slider">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-3.jpg" alt="Slider">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-4.jpg" alt="Slider">
-              </div>
-              <div class="swiper-slide">
-                <img class="swiper-slide__image" src="img/slide-5.jpg" alt="Slider">
-              </div>
+        <!-- Slider main container -->
+        <div class="swiper-container hotel-slider hotel__slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-1.jpg" alt="Slider">
             </div>
-
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
-
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-2.jpg" alt="Slider">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-3.jpg" alt="Slider">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-4.jpg" alt="Slider">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="swiper-slide__image" src="img/slide-5.jpg" alt="Slider">
+            </div>
           </div>
-          <!-- /.swiper-container -->
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
-        <!-- /.slider -->
+        <!-- /.swiper-container -->
         <div class="hotel-right">
           <div class="booking">
             <div class="booking__info">
@@ -192,6 +187,105 @@
         </button>
       </form>
     </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people thinks about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only
+                that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of
+                gallery which
+                were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
+                good as per
+                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not
+                good. Overall it
+                was a good experience and could recommend.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews-avatar-2.jpg" alt="Photo: Emma Watson" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Emma Watson</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                I loved the private beach and the proximity of the little town for shopping. The view and sound of the
+                ocean as well as the covered dining where we could watch the evening storms was fantastic! Wish we would
+                have booked for longer
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img//reviews-avatar-3.jpg" alt="Photo: Oliver Smith" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Oliver Smith</h3>
+                <span class="reviews-slider__date">Stayed 21 Dec, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                  <img src="img/Star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was a great experience. They don't have a lot of options for breakfast, but the options that they
+                have are really good, they even have a chef there preparing bacon and eggs as you wish. The beach nearby
+                is clean and beautiful. They offer equipment to use in the water, like boards and life jackets. The
+                happy hour was nice, they have a diversity of drinks. The room that I booked wasn't the basic one, so I
+                don't know about the other rooms, but mine was really clean, we had a good air conditioning, TV, good
+                sound system, huge bed. All the staffs know the basics of English, very dedicated and kind.
+              </p>
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button--prev"></button>
+        <button class="reviews-slider__button reviews-slider__button--next"></button>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+
   </section>
 
   <script src="js/swiper-bundle.min.js"></script>
