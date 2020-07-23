@@ -1390,11 +1390,14 @@ template {
   }
   .activities {
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   .card {
     width: 49%;
     height: 255px;
+  }
+  .card__title {
+    width: 200px;
   }
 }
 
@@ -1425,6 +1428,9 @@ template {
   .subscribe {
     width: 100%;
   }
+  .reviews {
+    padding: 40px 0 50px 0;
+  }
   .reviews__title {
     font-weight: bold;
     font-size: 18px;
@@ -1440,10 +1446,16 @@ template {
   .card {
     width: 100%;
   }
+  .card__title {
+    width: 100%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
   .slider {
     height: 179px;
+  }
+  .card__title {
+    width: 200px;
   }
 }
