@@ -184,12 +184,33 @@
   .footer
     &-wrapper
       grid-template-columns: auto
-      grid-row-gap: 40px
+      grid-row-gap: 40px    
     &__input
-      flex-basis: 100%    
+      flex-basis: 100%       
+    &__categories
+      grid-row: 3
+      grid-column: 1 
+    &__additional
+      grid-row: 4
+      grid-column: 1
     &__legal
+      grid-row: 5
+      grid-column: 1
       grid-column: span 2
-      margin-left: 0px
+      justify-self: normal
+      margin-left: 0
+    &__contact
+      &-details
+        grid-row: 6
+        // grid-column: 1
+    &__contacts
+      &-form
+        grid-row: 7
+        // grid-column: 1  
+    &__pay-condition   
+      grid-row: 8   
+      // display: block  
+      // grid-column: span 2 
 @media ( max-width: 576px )
   .logo
     width: 99px  
@@ -244,34 +265,36 @@
     &__title
       &--inline
         margin-bottom: 22px    
-    &__additional
-      grid-row: 4
-      grid-column: 1
-    &__categories
-      grid-row: 3
-      grid-column: 1
-    &__legal
-      grid-row: 5
-      grid-column: 1
-      justify-self: flex-start
-      margin-left: 0
-    &__contact
-      &-details
-        grid-row: 6
-        grid-column: 1
+    // &__additional
+    //   grid-row: 4
+    //   grid-column: 1
+    // &__categories
+    //   grid-row: 3
+    //   grid-column: 1
+    // &__legal
+    //   grid-row: 5
+    //   grid-column: 1
+    //   justify-self: flex-start
+    //   margin-left: 0
+    // &__contact
+    //   &-details
+    //     grid-row: 6
+    //     grid-column: 1
     &__form
       margin-bottom: 0px
-    &__contacts
-      &-form
-        grid-row: 7
-        grid-column: 1   
+    // &__contacts
+    //   &-form
+    //     grid-row: 7
+    //     grid-column: 1   
     &__message
       margin-bottom: 15px     
     &__pay-condition            
       display: block
       grid-column: span 2
     &__pay
-      margin-bottom: 10px    
+      margin-bottom: 10px
+      &-link
+        margin-right: 8px   
     
 @media(min-width:320px) and (max-width: 375px)
   .slider
@@ -301,7 +324,7 @@
       margin-bottom: 15px     
     &__pay-condition      
       display: block  
-      grid-column: span 4 
+      grid-column: span 2 
     &__pay
       margin-bottom: 10px
       &-link
