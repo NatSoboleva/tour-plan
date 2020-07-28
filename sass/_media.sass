@@ -16,6 +16,9 @@
   .footer
     &__input
       flex-basis: 100%  
+    &-wrapper
+      grid-template-columns: 1fr 1fr auto 1fr
+      grid-row-gap: 40px
 @media ( max-width: 992px )
   .container,
   .newsletter-wrapper
@@ -64,7 +67,7 @@
     height: 255px
   .footer
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: 1fr
       grid-row-gap: 40px
     &__input
       flex-basis: 49%
@@ -81,6 +84,7 @@
     &__additional
       grid-column: span 2
     &__legal
+      margin-left: 20px
       grid-column: span 2
     &__contact
       &-details
@@ -178,8 +182,14 @@
     &__title
       width: 200px   
   .footer
+    &-wrapper
+      grid-template-columns: auto
+      grid-row-gap: 40px
     &__input
       flex-basis: 100%    
+    &__legal
+      grid-column: span 2
+      margin-left: 0px
 @media ( max-width: 576px )
   .logo
     width: 99px  
@@ -224,18 +234,27 @@
     &__logo
       grid-row: 1
       grid-column: 1
-    &__social-network      
-      grid-row: 2
-      grid-column: 1
+    &__social
+      &-network      
+        grid-row: 2
+        grid-column: 1
+        display: block
+      &-links
+        display: inline-flex
+    &__title
+      &--inline
+        margin-bottom: 22px    
     &__additional
-      grid-row: 3
+      grid-row: 4
       grid-column: 1
     &__categories
-      grid-row: 4
+      grid-row: 3
       grid-column: 1
     &__legal
       grid-row: 5
       grid-column: 1
+      justify-self: flex-start
+      margin-left: 0
     &__contact
       &-details
         grid-row: 6
@@ -248,15 +267,11 @@
         grid-column: 1   
     &__message
       margin-bottom: 15px     
-    &__pay-condition      
-      display: block   
+    &__pay-condition            
+      display: block
+      grid-column: span 2
     &__pay
-      margin-bottom: 10px
-    &__button
-      order: 2
-    &__info
-      order: 1
-      margin-bottom: 15px
+      margin-bottom: 10px    
     
 @media(min-width:320px) and (max-width: 375px)
   .slider
@@ -264,7 +279,40 @@
   .card
     &__title
       width: 200px
-  
+  .footer
+    &__additional
+      grid-row: 4
+      grid-column: 1
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__legal
+      grid-row: 3
+      grid-column: 1      
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1    
+    &__contacts
+      &-form
+        grid-row: 7
+        grid-column: 1   
+    &__message
+      margin-bottom: 15px     
+    &__pay-condition      
+      display: block  
+      grid-column: span 4 
+    &__pay
+      margin-bottom: 10px
+      &-link
+        margin-right: 8px
+    &__button
+      order: 2
+    &__info
+      order: 1
+      margin-bottom: 15px
+
+    
 
     
 
