@@ -1717,6 +1717,22 @@ template {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
   }
+  .footer__social-network {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    display: block;
+  }
+  .footer__social-links {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  .footer__title--inline {
+    margin-bottom: 22px;
+  }
   .footer__categories {
     -ms-grid-row: 3;
     grid-row: 3;
@@ -1726,8 +1742,7 @@ template {
   .footer__additional {
     -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 1;
-    grid-column: 1;
+    grid-column: span 3;
   }
   .footer__legal {
     -ms-grid-row: 5;
@@ -1812,22 +1827,6 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__social-network {
-    -ms-grid-row: 2;
-    grid-row: 2;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    display: block;
-  }
-  .footer__social-links {
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-  }
-  .footer__title--inline {
-    margin-bottom: 22px;
-  }
   .footer__form {
     margin-bottom: 0px;
   }
@@ -1888,7 +1887,7 @@ template {
   }
   .footer__pay-condition {
     display: block;
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .footer__pay {
     margin-bottom: 10px;
