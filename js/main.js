@@ -23,5 +23,12 @@ var reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-  
+
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function () {
+  console.log("rkbr gj ryjgrt menu");
+  document.querySelector(".navbar-bottom")
+    .classList.toggle("navbar-bottom--visible");
+})
