@@ -98,6 +98,9 @@
       grid-column: span 6
       display: flex
       justify-content: space-between
+  .modal
+    &__dialog
+      padding: 33px 55px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -106,7 +109,7 @@
     padding-top: 78px
   .navbar
     &__mobile
-      &--fixed
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -259,7 +262,20 @@
     &__pay-condition   
       grid-row: 8   
       // display: block  
-      // grid-column: span 2 
+      // grid-column: span 2
+  .modal
+    &__dialog
+      padding: 33px 25px
+    &__button 
+      order: 2
+    &__info
+      flex-basis: 100%
+      order: 1
+      margin-bottom: 20px
+@media ( max-width: 698px )
+  .modal
+    &__dialog
+      width: 65%
 @media ( max-width: 576px )
   .logo
     width: 99px  
@@ -318,6 +334,14 @@
       margin-bottom: 10px
       &-link
         margin-right: 8px       
+  .modal
+    &__dialog
+      width: 70%
+      padding: 33px 15px
+@media ( max-width: 480px )
+  .modal
+    &__dialog
+      width: 80%      
 @media(min-width:320px) and (max-width: 375px)
   .slider
     height: 179px
@@ -357,6 +381,10 @@
       flex-basis: 100%
       order: 1
       margin-bottom: 15px
+  .modal
+    &__dialog
+      width: 100%
+      padding: 33px 15px
 
     
 

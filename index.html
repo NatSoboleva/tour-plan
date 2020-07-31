@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
@@ -108,7 +108,7 @@
             Child Stays Free</p>
         </div>
         <!-- /.hotel-info__text -->
-        <div class="rating hotel-info__rating">
+        <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
           <span class="rating__text">User Ratting</span>
           <span class="rating__counter">4.5/5</span>
         </div>
@@ -172,7 +172,8 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other
+              Options</button>
           </div>
           <!-- /.booking -->
           <div class="map">
@@ -450,7 +451,7 @@
           <form action="#" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*">
             <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea class="footer__message" placeholder="Message"></textarea>
+            <textarea class="message footer__message" placeholder="Message"></textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
@@ -481,10 +482,49 @@
     </div>
     <!-- /.container -->
   </footer>
+  <!--   modal  -->
+  <div class="modal" id="booking-modal">
+    <div class="modal__overlay"></div>
+    <!--/.modal__overlay  -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+      <h3 class="modal__title">Booking</h3>
+      <form action="#" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone-call">
+        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+        <span class="modal__info">* Required Fields</span>
+      </form>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <div class="modal" id="rating-modal">
+    <div class="modal__overlay"></div>
 
+    <!-- <div class="modal__dialog">
+    <a href="#" class="modal__close">
+      <img src="img/close.svg" alt="icon: close">
+    </a>
+    <div class="footer__contacts-form">
+      <h3 class="modal__title">Send message</h3>
+      <form action="#" class="modal__form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+        <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+        <button class="button modal__button" type="submit">Send</button>
+      </form>
+    </div>
+  </div> -->
+
+  </div>
   <script src=" js/swiper-bundle.min.js"> </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
