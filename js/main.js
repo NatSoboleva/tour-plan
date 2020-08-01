@@ -52,3 +52,44 @@ $(document).ready(function () {
   }
 
 });
+
+ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [7.838196, 98.298812],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 15
+    }),
+    myGeoObject = new ymaps.GeoObject({
+      // Описание геометрии.
+      geometry: {
+        type: "Point",
+        coordinates: [7.838196, 98.298812],
+      },
+      properties: {
+        // Контент метки.
+        iconContent: 'HILTON PHUKET',
+        hintContent: 'Временно закрыт'
+      }
+    }, { // Опции.
+      // Иконка метки будет растягиваться под размер ее содержимого.
+      preset: 'islands#darkBlueStretchyIcon',
+      // Метку можно перемещать.
+      draggable: true
+    }),
+
+    myPieChart = new ymaps.Placemark([7.838196, 98.298812], {
+      preset: 'islands#redIcon',
+      iconColor: 'red'
+    });
+
+  myMap.geoObjects
+    .add(myGeoObject)
+    .add(myPieChart)
+}
