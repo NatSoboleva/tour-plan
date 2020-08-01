@@ -1610,6 +1610,7 @@ template {
   }
   .map {
     width: 340px;
+    height: 225px;
   }
   .reviews-slider__item {
     max-width: 580px;
@@ -1825,7 +1826,7 @@ template {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 450px;
+    min-height: 470px;
   }
   .hotel-slider {
     height: 350px;
@@ -1834,9 +1835,6 @@ template {
     width: 100%;
   }
   .map {
-    width: 100%;
-  }
-  .map-iframe {
     width: 100%;
   }
   .newsletter-wrapper {
