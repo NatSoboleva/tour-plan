@@ -72,6 +72,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone number required",
+          minlength: "At least 18 characters required!"
         },
         email: {
           required: "We need your email address to contact you",

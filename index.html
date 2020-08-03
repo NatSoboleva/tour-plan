@@ -198,7 +198,7 @@
       </h2>
       <form action="#" method="POST" class="subscribe newsletter__subscribe form">
         <div class="subscribe__input-group">
-          <input required type="email" class="subscribe__input" name="email" placeholder="Your email address">
+          <input type="email" class="subscribe__input" name="email" placeholder="Your email address" required>
           <button class="subscribe__button">
             Send
           </button>
@@ -501,7 +501,8 @@
       <h3 class="modal__title">Booking</h3>
       <form action="#" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone-call" required>
+        <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone-call" required
+          minlength="18" maxlength="18">
         <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button" type="submit">Send</button>
