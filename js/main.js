@@ -50,9 +50,29 @@ $(document).ready(function () {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+  // валидация формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must not be shorter than 2 letters"
+        },
+        phone: {
+          required: "Phone number required",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      }
+    });
+  });
 
 });
 
+// подключение карты Яндекс
 ymaps.ready(init);
 
 function init() {
@@ -83,12 +103,10 @@ function init() {
       // Метку можно перемещать.
       draggable: true
     }),
-
     myPieChart = new ymaps.Placemark([7.838196, 98.298812], {
       preset: 'islands#redIcon',
       iconColor: 'red'
     });
-
   myMap.geoObjects
     .add(myGeoObject)
     .add(myPieChart)

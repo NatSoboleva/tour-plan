@@ -14,8 +14,9 @@
     width: 230px
     height: 230px   
   .footer
-    &__input
-      flex-basis: 100%  
+    &__input     
+      &-group
+        flex-basis: 48%
     &-wrapper
       grid-template-columns: 1fr 1fr auto 1fr
       grid-row-gap: 40px
@@ -71,7 +72,8 @@
       grid-template-columns: 1fr
       grid-row-gap: 40px
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-column: span 2
       grid-row: 1 / 2
@@ -227,7 +229,8 @@
       grid-template-columns: auto
       grid-row-gap: 40px    
     &__input
-      flex-basis: 100%      
+      &-group
+        flex-basis: 100%
     &__social
       &-network      
         grid-row: 2
