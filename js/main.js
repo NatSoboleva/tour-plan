@@ -68,7 +68,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "The name must not be shorter than 2 letters"
+          minlength: "The name must be more than 2 letters"
         },
         phone: {
           required: "Phone number required",
@@ -80,6 +80,23 @@ $(document).ready(function () {
         },
       }
     });
+  });
+  $(".modal__form").validate({
+    errorClass: "invalided",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "The name must not be shorter than 2 letters"
+      },
+      phone: {
+        required: "Phone number required",
+        minlength: "At least 18 characters required!"
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      },
+    }
   });
 
 });
