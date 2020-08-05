@@ -99,6 +99,8 @@ $(document).ready(function () {
     }
   });
 
+  AOS.init();
+
 });
 
 // подключение карты Яндекс

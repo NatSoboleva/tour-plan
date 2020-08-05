@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +18,7 @@
   <header class="navbar navbar__mobile-fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="#" class="logoЖ">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
@@ -193,7 +194,8 @@
   <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg"
     data-speed="0.01">
     <div class=" newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">subscribe to our
+      <h2 class="newsletter-title newsletter__title" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+        data-aos-duration="2500">subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="#" method="POST" class="subscribe newsletter__subscribe form">
@@ -310,7 +312,7 @@
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-duration="1000">
           <img src="img/activities-1.jpg" alt="The curious corner
             of chamarel" class="card__image">
           <h3 class="card__title">The curious corner
@@ -318,7 +320,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-right" data-aos-duration="400">
           <img src="img/activities-2.jpg" alt="Gymkhana club golf
             course" class="card__image">
           <h3 class="card__title">Gymkhana club golf
@@ -326,7 +328,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-left" data-aos-duration="400">
           <img src="img/activities-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking
@@ -335,7 +337,7 @@
           <button class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-left" data-aos-duration="1000">
           <img src="img/activities-4.jpg" alt="The blue marine discovery
             quest" class="card__image">
           <h3 class="card__title">The blue marine discovery
@@ -353,7 +355,8 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo" data-aos="zoom-out"
+          data-aos-duration="1000">
 
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -519,6 +522,7 @@
   <script src="js/swiper-bundle.min.js"> </script>
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 
