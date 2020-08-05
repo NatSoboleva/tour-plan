@@ -63,8 +63,8 @@ button, input, textarea {
 
 .invalided {
   color: #ec1f46;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -976,6 +976,8 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .subscribe__button {
@@ -987,6 +989,8 @@ template {
   border: none;
   background-color: #ec1f46;
   color: #FFFFFF;
+  -webkit-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
 }
 
 .parallax-window {
